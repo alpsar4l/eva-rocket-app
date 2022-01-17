@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-size: 24px;
+    font-family: "Gilroy-Medium", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    user-select: none;
+
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #54535e;
+
+    .app {
+        display: flex;
+
+        .left,
+        .right {
+            height: 100vh;
+
+            .content {
+                padding: 15px;
+
+                .select-container {
+                    padding: 20px;
+                    border-radius: 15px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0 0 10px 0 rgba(230, 226, 226, 0.43);
+                    margin-bottom: 20px;
+
+                    .content-title-default {
+                        font-family: "Gilroy-Bold", sans-serif;
+                        font-size: 29px;
+                    }
+
+                    .select-port-content {
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+
+        .left {
+            width: 100%;
+
+            .content {
+                padding-right: 0;
+            }
+        }
+
+        .right {
+            float: right;
+
+            .content .eva-logo {
+                display: grid;
+                place-items: center;
+                padding: 30px;
+
+                img {
+                    height: 120px;
+                }
+            }
+        }
+    }
+}

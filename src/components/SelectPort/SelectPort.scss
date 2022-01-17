@@ -1,0 +1,65 @@
+.select-port-container {
+    .select-port-content {
+        .buttons {
+            padding: 15px 0;
+            display: flex;
+            grid-gap: 10px;
+
+            .button.disabled {
+                cursor: not-allowed !important;
+                opacity: 0.8;
+
+                span {
+                    color: grey;
+                }
+
+                &:active {
+                    transform: none !important;
+                }
+
+                &:hover {
+                    background-color: rgba(244,243,243,1) !important;
+                }
+            }
+
+            .button {
+                cursor: pointer;
+                background-color: rgba(244,243,243,1);
+                padding: 17px 0;
+                width: 100%;
+                text-align: center;
+                border-radius: 8px;
+
+                span {
+                    font-family: "Gilroy-Bold", sans-serif;
+                }
+
+                &:active {
+                    transform: scale(0.90);
+                }
+
+                &:hover {
+                    background-color: rgb(234, 234, 234);
+                }
+            }
+        }
+
+        .details {
+            .detail {
+                span {
+                    &:nth-child(1) {
+                        font-family: "Gilroy-Bold", sans-serif;
+
+                        &::after {
+                            content: ": ";
+                        }
+                    }
+
+                    &:nth-child(2) {
+                        font-family: "Gilroy-Medium", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

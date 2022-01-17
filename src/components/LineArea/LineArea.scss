@@ -1,0 +1,38 @@
+.line-area-container {
+    .axis path {
+        fill: none;
+        stroke: #54535e;
+        shape-rendering: crispEdges;
+    }
+
+    .tick text {
+        font-family: "Gilroy-Bold", sans-serif;
+        font-size: 15px;
+    }
+
+    .svg-line-chart-point {
+        fill: #105ee6;
+        stroke-width: 2px;
+        cursor: pointer;
+    }
+
+    div.svg-line-chart-tooltip {
+        position: fixed;
+        text-align: center;
+        width: 100px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        font: 12px sans-serif;
+        background: #f5f5f5;
+        border: 0;
+        pointer-events: none;
+        opacity: 0;
+    }
+
+    .svg-line-chart-label {
+        text-anchor: middle;
+        font-size: 17px;
+        color: #54535e;
+        font-family: "Gilroy-Bold", sans-serif;
+    }
+}
